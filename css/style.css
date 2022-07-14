@@ -4,6 +4,17 @@
     font-family: 'Poppins', sans-serif;
 }
 
+:root {
+    --black: #000;
+    --white: #fff;
+    --LightGreen: #7ed56f;
+    --MediumGreen: #55c57a;
+    --DarkGreen: #28b485;
+    --Yellow: #FFFF00;
+    --NavyBlue: #163a5f;
+    --Gray: #777;
+}
+
 .header {
     background-image: url(../images/cover.jpg);
     background-repeat: no-repeat;
@@ -29,28 +40,28 @@
 
 .nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: var(--white);
     padding: 10px 30px;
     font-weight: 700;
 }
 
 .nav ul li a:hover {
     background-color: rgba(240, 11, 11, 1);
-    color: #fff;
+    color: var(--white);
     padding: 10px 30px;
     transition: all .3s ease-in-out;
     border-radius: 10px;
 }
 
 .cover-title {
-    color: #fff;
+    color: var(--white);
     margin-top: 50px;
     padding-left: 20%;
     font-size: 50px;
 }
 
 .describe {
-    color: #eee;
+    color: var(--white);
     margin-left: 20%;
     font-size: 18px;
     margin-bottom: 50px;
@@ -58,7 +69,7 @@
 
 .link-btn {
     text-decoration: none;
-    color: #fff;
+    color: var(--white);
     padding: 10px 30px;
     background-color: rgba(240, 11, 11, 1);
     font-size: 20px;
@@ -73,7 +84,8 @@
     background-color: rgba(240, 11, 11, .9);
 }
 
-.content-01 {
+.content-01,
+.content-02 {
     display: flex;
     justify-content: space-around;
     margin-top: 50px;
@@ -92,10 +104,73 @@
 .content-describe {
     color: #333;
     font-size: 18px;
+    font-weight: 400;
     margin-bottom: 30px;
 }
 
 .video {
     width: 90%;
     border-radius: 10px;
+}
+
+.dua-img {
+    width: 70%;
+    margin-left: 40%;
+}
+
+.content-03 {
+    margin-top: 50px;
+}
+
+.dpg-title {
+    text-align: center;
+    font-size: 50px;
+    color: #444;
+}
+
+.dpg-describe {
+    margin: 0 370px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.dgp-article {
+    display: flex;
+    justify-content: center;
+}
+
+.help {
+    width: 25%;
+    height: 150px;
+    background-color: #FEF4F5;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    padding-top: 30px;
+    border-radius: 10px;
+}
+
+.icon-box {
+    position: absolute;
+}
+
+.icon-box img {
+    width: 100%;
+}
+
+.text-box {
+    margin-left: 20%;
+}
+
+.dgp-title {
+    font-size: 30px;
+    font-weight: 500;
+    color: #444;
+}
+
+.dgp-describe-02 {
+    color: #544949;
 }
